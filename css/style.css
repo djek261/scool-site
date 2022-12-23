@@ -22,16 +22,17 @@ h1 {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 150px);
-    row-gap: 80px;
-    column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(205, 1fr));
+    gap: 30px;
  }
 
-.card {
+.child {
     box-shadow: 3px -3px 7px rgb(130, 134, 235);
-    height: 200px;
-    width: 250px;
+    min-height: 200px;
+    min-width: 250px;
+    border: solid 2px blue;
+    border-radius: 15px;
 }
 
 .card:hover {
@@ -39,6 +40,7 @@ h1 {
     height: 205px;
     width: 255px;
     transition: 1s;
+    border-radius: 5%;
 }
 
 .card-body {
@@ -50,11 +52,17 @@ h1 {
     background-color: rgb(29, 29, 232);
     color: aliceblue;
     height: 50px;
+    padding-top: 15px;
 }
 
 .card-title {
     color: blue;
     margin-top: 10px;
+    padding: 8px;
+}
+
+.card-header:first-child {
+    border-radius: 12px 12px 0 0;
 }
 
 .card-img {
