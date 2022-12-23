@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@100;300;700&display=swap');
+
+
+body, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 100;
+    font-weight: 700;
+}
+
+.a_card {
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 150px);
+    row-gap: 80px;
+    column-gap: 30px;
+ }
+
+.card {
+    box-shadow: 3px -3px 7px rgb(130, 134, 235);
+    height: 200px;
+    width: 250px;
+}
+
+.card:hover {
+    box-shadow: 3px -3px 7px rgb(219, 54, 71);
+    height: 205px;
+    width: 255px;
+    transition: 1s;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+.card-header {
+    font-weight: 700;
+    background-color: rgb(29, 29, 232);
+    color: aliceblue;
+    height: 50px;
+}
+
+.card-title {
+    color: blue;
+    margin-top: 10px;
+}
+
+.card-img {
+    width: 90%;
+    border: solid 3px rgb(24, 9, 233);
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+iframe {
+    border: solid 3px rgb(24, 9, 233);
+    border-radius: 20px;
+    margin: 30px 0;
+}
